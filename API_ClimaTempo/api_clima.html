@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Previsao do Tempo</title>
+
+    <link rel="stylesheet" href="styleApi.css">
+
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Previsão do Tempo</h1>
+
+        <label for="">Digite o nome da cidade:</label>
+
+        <input type="text" id="cidade" placeholder="Informe a cidade">
+
+        <button onclick="previsaoTempo()">Consultar</button>
+
+        <button id="googleEarthButton" onclick="GoogleEarth()">Pesquisar no Google Earth</button>
+
+    </div>
+
+
+    <div id="info">
+
+        <h2>Informações sobre o clima:</h2>
+        <p id="nomeCidade"></p>
+        <p id="temperatura"></p>
+        <p id="umidade"></p>
+        <p id="vento"></p>
+        
+    </div>
+
+
+    <script src="api_clima.js"></script>
+    
+</body>
+</html>
